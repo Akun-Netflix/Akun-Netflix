@@ -1,0 +1,297 @@
+<html lang="id"><head></head><body><meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Premium Store - Termurah &amp; Terpercaya</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #E50914;
+            --dark: #0f0f0f;
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --text: #ffffff;
+        }
+ 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+ 
+        body {
+            background-color: var(--dark);
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+ 
+        /* Background Glow */
+        body::before {
+            content: "";
+            position: fixed;
+            top: -10%;
+            left: -10%;
+            width: 40%;
+            height: 40%;
+            background: radial-gradient(circle, rgba(229, 9, 20, 0.2) 0%, transparent 70%);
+            z-index: -1;
+        }
+ 
+        header {
+            padding: 2rem 5%;
+            text-align: center;
+        }
+ 
+        .logo {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 0.5rem;
+        }
+ 
+        .tagline {
+            opacity: 0.8;
+            font-size: 1rem;
+        }
+ 
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 5%;
+        }
+ 
+        /* Pricing Grid */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+ 
+        .card {
+            background: var(--card-bg);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+        }
+ 
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary);
+        }
+ 
+        .card.popular {
+            border: 2px solid var(--primary);
+        }
+ 
+        .badge {
+            background: var(--primary);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+        }
+ 
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+ 
+        .price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+ 
+        .price span {
+            font-size: 1rem;
+            opacity: 0.6;
+        }
+ 
+        .features {
+            list-style: none;
+            margin-bottom: 2rem;
+            text-align: left;
+        }
+ 
+        .features li {
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+        }
+ 
+        .features li i {
+            color: #2ecc71;
+            margin-right: 10px;
+        }
+ 
+        .btn {
+            display: block;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            padding: 12px;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+ 
+        .btn:hover {
+            background: #b20710;
+            box-shadow: 0 0 20px rgba(229, 9, 20, 0.4);
+        }
+ 
+        /* Footer / Payment Methods */
+        footer {
+            margin-top: 5rem;
+            padding: 3rem 5%;
+            background: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+ 
+        .payment-methods {
+            margin: 2rem 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            filter: grayscale(0.5);
+            transition: 0.3s;
+        }
+ 
+        .payment-methods:hover {
+            filter: grayscale(0);
+        }
+ 
+        .payment-methods img {
+            height: 25px;
+            object-fit: contain;
+            background: white;
+            padding: 5px;
+            border-radius: 5px;
+        }
+ 
+        .social-links {
+            margin-top: 1rem;
+        }
+ 
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 15px;
+            transition: 0.3s;
+        }
+ 
+        .social-links a:hover {
+            color: var(--primary);
+        }
+ 
+        /* Anime Character Style */
+        .anime-character {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 150px; /* Ukuran Sedang */
+            z-index: 100;
+            pointer-events: none; /* Supaya tidak menghalangi klik di bawahnya */
+            animation: float 4s ease-in-out infinite;
+        }
+ 
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+ 
+        @media (max-width: 600px) {
+            .anime-character {
+                width: 100px;
+                right: 10px;
+            }
+        }
+    </style>
+ 
+ 
+    <header>
+        <div class="logo">POKSTORE
+        </div>
+        <p class="tagline">Premium Experience, Minimal Price. Murah, Aman, Bergaransi.</p>
+    </header>
+ 
+    <div class="container">
+        <div class="pricing-grid">
+            <div class="card">
+                <h3>1 PROFILR 2 USER</h3>
+                <div class="price">10K<span>-25K</span></div>
+                <ul class="features">
+                    <li><i class="fas fa-check-circle"></i> 1 Hari  :10.000 </li>
+                    <li><i class="fas fa-check-circle"></i> 7 Hari  :16.500 </li>
+                    <li><i class="fas fa-check-circle"></i> 1 Bulan :25.000 </li>
+                </ul>
+                <a href="https://wa.me/6281385760700" class="btn">Beli Sekarang</a>
+            </div>
+ 
+            <div class="card popular">
+                <div class="badge">BEST SELLER</div>
+                <h3>1 PROFIL 1 USER </h3>
+                <div class="price">13K<span>-33K</span></div>
+                <ul class="features">
+                    <li><i class="fas fa-check-circle"></i> 1 Hari  :13.000</li>
+                    <li><i class="fas fa-check-circle"></i> 7 Hari  :22.000</li>
+                    <li><i class="fas fa-check-circle"></i> 1 Bulan :33.000</li>
+                </ul>
+                <a href="https://wa.me/6281385760700" class="btn">Beli Sekarang</a>
+            </div>
+ 
+            <div class="card">
+                <h3>SEMI-PRIVATE</h3>
+                <div class="price">45K<span>/bulan</span></div>
+                <ul class="features">
+                    <li><i class="fas fa-check-circle"></i> 1 Bulan: 45.000</li>
+                    <li><i class="fas fa-check-circle"></i> STOK TERBATAS</li>
+                </ul>
+                <a href="https://wa.me/6281385760700" class="btn">Beli Sekarang</a>
+            </div>
+            <div class="card">
+                <h3>PRIVATE</h3>
+                <div class="price">180K<span>/bulan</span></div>
+                <ul class="features">
+                    <li><i class="fas fa-check-circle"></i> 1 Bulan: 180.000</li>
+                    <li><i class="fas fa-check-circle"></i> STOK TERBATAS</li>
+                </ul>
+                <a href="https://wa.me/6281385760700" class="btn">Beli Sekarang</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Metode Pembayaran Terlengkap:</p>
+        <div class="payment-methods">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Bank_Central_Asia.svg" alt="BCA">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Bank_Mandiri_logo_2016.svg" alt="Mandiri">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/BRI_2020.svg" alt="BRI">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Logo_dana_blue.svg" alt="DANA">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/eb/Logo_ovo_purple.svg" alt="OVO">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Logo_QRIS.svg" alt="QRIS">
+        </div>
+ 
+        <p>© 2026 NetStore Premium. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="https://wa.me/6281385760700"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </footer>
+ 
+    <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMjVzMDlhZTNwMXZqN284ZXhqMnR1Mml0dDl4bTdmbW5oNWJja2h1ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/AAlbHTbyk50wY1SQ3P/giphy.gif" 
+    class="anime-character" 
+    alt="One Piece Animation">
+</body></html>
